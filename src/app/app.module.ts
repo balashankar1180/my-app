@@ -8,6 +8,8 @@ import { StudentComponent } from './student/student.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentService } from './student/student.service';
 import { AppService } from './app.service';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { AppService } from './app.service';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    NgbModule
   ],
   providers: [ StudentService, AppService  ],
   bootstrap: [AppComponent]

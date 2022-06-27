@@ -1,7 +1,10 @@
+
 .colorClass { color : red; }
+button { margin: 4px; }
+
 
 /* button formatting here */
-button {
+/* button {
   background-color: #6610f2;
   border: none;
   border-radius: 4px;
@@ -13,7 +16,7 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-}
+} */
 
 div.forDirective {
   padding: 5px;
