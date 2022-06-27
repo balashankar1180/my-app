@@ -1,12 +1,26 @@
-<h1>Welcome to ScoriaIT</h1>
-<p>Hello world</p>
-<app-student></app-student>
+
+
+
+
+
+
+
+<a routerLink="student">Grid</a>
+<router-outlet></router-outlet>
+<div class="bindings">
+<h1>Concept of Data Bindings</h1>
 <button (click)="onClick2()" style="color : red;" [style.font-size.px]="fontSize">Click Me</button>
 <button (click)="onClick()" [ngStyle]="titleStyles">Click Here</button>
-
-Your Text : <input type="text" [(ngModel)]="userText"/>
+<br>
+<label for="fname">Enter Your Text Here : </label>
+<input type="text" [(ngModel)]="userText"/>
 <p>{{userText}}</p>
+</div>
+ 
+<h2>balu here</h2>
 
+
+<div class="forDirective">
 <table>
     <thead>
         <tr><th class="one">ID</th> <th>FirstName</th> <th>DOB</th> <th>Gender</th> <th class="two">CourseFee</th></tr>
@@ -26,4 +40,4 @@ Your Text : <input type="text" [(ngModel)]="userText"/>
         </tr>
     </tbody>
 </table>
- 
+</div>
