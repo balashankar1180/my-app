@@ -1,0 +1,28 @@
+<p>Hello world</p>
+<app-student></app-student>
+<button (click)="onClick2()" style="color : red;" [style.font-size.px]="fontSize">Click Me</button>
+<button (click)="onClick()" [ngStyle]="titleStyles">Click Here</button>
+
+Your Text : <input type="text" [(ngModel)]="userText"/>
+<p>{{userText}}</p>
+
+<table>
+    <thead>
+        <tr><th class="one">ID</th> <th>FirstName</th> <th>DOB</th> <th>Gender</th> <th class="two">CourseFee</th></tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of students">
+        <td>{{data.ID}}</td>
+        <td>{{data.FirstName}}</td>
+        <td>{{data.DOB}}</td>
+        <td>{{data.Gender}}</td>
+        <td>{{data.CourseFee}}</td>
+        </tr>
+        <tr *ngIf="!students || students.length==0">
+            <td colspan="5">
+                No Students to Display
+            </td>
+        </tr>
+    </tbody>
+</table>
+ 
