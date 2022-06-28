@@ -4,39 +4,40 @@
 <router-outlet></router-outlet>
 
 
+<!-- ****** Concept of Data Bindings ****** -->
 <div class="bindings">
 <h1>Concept of Data Bindings</h1>
 <button (click)="onClick2()" style="color : red;" [style.font-size.px]="fontSize">Click Me</button>
 <button (click)="onClick()" [ngStyle]="titleStyles">Click Here</button>
 <br>
 <label for="fname">Enter Your Text Here : </label>
-<input type="text" [(ngModel)]="userText"/>
+<input type="text" placeholder="Enter Text Here" [(ngModel)]="userText"/>
 <p>{{userText}}</p>
 </div>
  
-<h2>balu here</h2>
 
 
+<!-- ****** Concept of ngFor Directive ****** -->
 <div class="forDirective">
+<h1>Concept of ngFor Directive</h1>
 <table>
-    <thead>
-        <tr><th class="one">ID</th> <th>FirstName</th> <th>DOB</th> <th>Gender</th> <th class="two">CourseFee</th></tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let data of students">
-        <td>{{data.ID}}</td>
-        <td>{{data.FirstName}}</td>
-        <td>{{data.DOB}}</td>
-        <td>{{data.Gender}}</td>
-        <td>{{data.CourseFee}}</td>
-        </tr>
-        <tr *ngIf="!students || students.length==0">
-            <td colspan="5">
-                No Students to Display
-            </td>
-        </tr>
-    </tbody>
+<thead>
+<tr><th class="one">ID</th> <th>FirstName</th> <th>DOB</th> <th>Gender</th> <th class="two">CourseFee</th></tr>
+</thead>
+<tbody>
+<tr *ngFor="let data of students">
+<td>{{data.ID}}</td>
+<td>{{data.FirstName}}</td>
+<td>{{data.DOB}}</td>
+<td>{{data.Gender}}</td>
+<td>{{data.CourseFee}}</td>
+</tr>
+<tr *ngIf="!students || students.length==0">
+<td colspan="5">No Students to Display</td>
+</tr>
+</tbody>
 </table>
+<h3>{{errorMsg}}</h3>
 </div>
 
 

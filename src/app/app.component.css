@@ -23,11 +23,11 @@ div.forDirective {
   margin: 20px;
   border : 4px solid #0E2C4B;
   border-radius: 5px;
-  width: auto;
+  width: 50%;
 }
 table {
     border-collapse: collapse;
-    width: 50%;
+    width: 100%;
 }
 th, td {  padding: 10px; text-align: left; border-bottom: 3px solid #ddd; }
 tr:hover {background-color: rgb(173, 165, 162);}
