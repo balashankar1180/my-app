@@ -20,7 +20,7 @@ button { margin: 4px; }
 
 div.forDirective {
   padding: 5px;
-  margin: 20px;
+  margin: 4px;
   border : 4px solid #0E2C4B;
   border-radius: 5px;
   width: 50%;
@@ -36,8 +36,8 @@ th { color: #fff; background-color: hsl(210, 69%, 17%); }
 .two { border-top-right-radius: 4px; }
 div.bindings {
   padding: 5px;
-  margin: 20px;
-  width: 800px;
+  margin: 4px;
+  width: 50%;
   height: 200px;
   border : 4px solid #0E2C4B;
   border-radius: 5px; 

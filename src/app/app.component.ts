@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 
 // ****** Code for Data Bidings Section ******
 fontSize : number = 30;
-titleStyles = { color : "red", fontStyle : "italic", fontWeight : "bold" };
+titleStyles = { color : "black", fontWeight : "bold" };
 // An Object consisting of CSS Properties and applied CSS Properties are as per Angular Specification.
 onClick() : void {
 alert("This is Event Binding. Buttons have some events. one of them is 'click' event. So, when you click the button, click event raises and method executed. ");
