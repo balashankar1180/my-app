@@ -11,7 +11,8 @@ return [
 { ID: '104', FirstName: 'Hina', DOB: '08/19/1990', Gender: 'Female', CourseFee: 9000.50 },
 { ID: '105', FirstName: 'Sambit', DOB: '04/12/1991', Gender: 'Male', CourseFee: 9876.54 },
 { ID: '106', FirstName: 'Tarun', DOB: '04/10/1992', Gender: 'Male', CourseFee: 1278.55 },
-{ ID: '107', FirstName: 'Balu', DOB: '04/10/1992', Gender: 'Male', CourseFee: 1278.55 }
+{ ID: '107', FirstName: 'Balu', DOB: '04/10/1992', Gender: 'Male', CourseFee: 1278.55 },
+{ ID: '107', FirstName: 'Emma', DOB: '06/11/1992', Gender: 'Female', CourseFee: 6000.00 },
 ];
 }
 }

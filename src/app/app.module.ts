@@ -9,19 +9,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { StudentService } from './student/student.service';
 import { AppService } from './app.service';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule, Routes } from '@angular/router';
+import { BindingComponent } from './binding/binding.component';
 
 
 
 
 @NgModule({
-  declarations: [ AppComponent, StudentComponent ],
+  declarations: [ AppComponent, StudentComponent, BindingComponent ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
     AgGridModule.withComponents([]),
-    NgbModule
+    NgbModule,
+    RouterModule
   ],
   providers: [ StudentService, AppService  ],
   bootstrap: [AppComponent]

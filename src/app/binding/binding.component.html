@@ -1,0 +1,12 @@
+<p>binding works! {{user}}</p>
+<!-- ****** Concept of Data Bindings ****** -->
+<div class="bindings">
+    <h1>Concept of Data Bindings by Balu</h1>
+    <button type="button" class="btn btn-primary" (click)="onClick2()" style="color : black;">Click Here</button>
+    <button type="button" class="btn btn-primary" (click)="onClick()" [ngStyle]="titleStyles">Click Here</button>
+    <br>
+    <label for="fname">Enter Your Text Here : </label>
+    <input type="text" placeholder="Enter Text Here" [(ngModel)]="userText"/>
+    <p>{{userText}}</p>
+    </div>
+

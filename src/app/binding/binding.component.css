@@ -1,0 +1,9 @@
+div.bindings {
+    padding: 5px;
+    margin: 4px;
+    width: 50%;
+    height: 200px;
+    border : 4px solid #0E2C4B;
+    border-radius: 5px; 
+  }
+  button { margin: 4px; }
