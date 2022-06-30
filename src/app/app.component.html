@@ -11,45 +11,33 @@
 <button type="button" class="btn btn-secondary" routerLink="bindings">Data Bindings</button>
 </li>
 <li class="nav-item">
+<button type="button" class="btn btn-secondary" routerLink="interface">Interface</button>
+</li>
+<li class="nav-item">
+<button type="button" class="btn btn-secondary" routerLink="directive">Directives</button>
+</li>
+<li class="nav-item">
+<button type="button" class="btn btn-secondary" routerLink="">Button 1</button>
+</li>
+<li class="nav-item">
+<button type="button" class="btn btn-secondary" routerLink="">Button 2</button>
+</li>
+<li class="nav-item">
+<button type="button" class="btn btn-secondary" routerLink="">Button 3</button>
+</li>
+<li class="nav-item">
+<button type="button" class="btn btn-secondary" routerLink="">Button 4</button>
+</li>
+<li class="nav-item">
+<button type="button" class="btn btn-secondary" routerLink="">Button 5</button>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Disabled</a>
+</li>
+<li class="nav-item">
 <a class="nav-link disabled" href="#">Disabled</a>
 </li>
 </ul>
 </div>
 </nav>
 <router-outlet></router-outlet>
-<!-- <app-binding></app-binding> -->
-
-
-
-
- 
-
-
-<!-- ****** Concept of ngFor Directive ****** -->
-<div class="forDirective">
-<h1>Concept of ngFor Directive</h1>
-<table>
-<thead>
-<tr><th class="one">ID</th> <th>FirstName</th> <th>DOB</th> <th>Gender</th> <th class="two">CourseFee</th></tr>
-</thead>
-<tbody>
-<tr *ngFor="let data of students">
-<td>{{data.ID}}</td>
-<td>{{data.FirstName}}</td>
-<td>{{data.DOB}}</td>
-<td>{{data.Gender}}</td>
-<td>{{data.CourseFee}}</td>
-</tr>
-<tr *ngIf="!students || students.length==0">
-<td colspan="5">No Students to Display</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-
-
-
-
-
-

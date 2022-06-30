@@ -11,12 +11,14 @@ import { AppService } from './app.service';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule, Routes } from '@angular/router';
 import { BindingComponent } from './binding/binding.component';
+import { InterfaceComponent } from './interface/interface.component';
+import { DirectiveComponent } from './directive/directive.component';
 
 
 
 
 @NgModule({
-  declarations: [ AppComponent, StudentComponent, BindingComponent ],
+  declarations: [ AppComponent, StudentComponent, BindingComponent, InterfaceComponent, DirectiveComponent ],
   imports: [
     BrowserModule,
     HttpClientModule,
