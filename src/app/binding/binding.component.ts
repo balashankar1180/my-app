@@ -19,7 +19,10 @@ alert("This is Style Binding. With Style Binding, you can apply multiple styles 
 }
 
 // ****** Two-Way Data Bindig Section ******
-userText : string = "";
+fname : string = "";
+lname : string = "";
+country : string = "";
+getInfo() : void { alert("Thank You!"); }
   constructor() { }
 
   ngOnInit() {
