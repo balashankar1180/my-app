@@ -1,0 +1,6 @@
+body { background-color:  red;}
+img {
+    position : fixed;
+    left : 50px;
+    bottom: -20px;
+}

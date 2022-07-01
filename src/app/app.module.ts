@@ -13,12 +13,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { BindingComponent } from './binding/binding.component';
 import { InterfaceComponent } from './interface/interface.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { HomeComponent } from './home/home.component';
 
 
 
 
 @NgModule({
-  declarations: [ AppComponent, StudentComponent, BindingComponent, InterfaceComponent, DirectiveComponent ],
+  declarations: [ AppComponent, StudentComponent, BindingComponent, InterfaceComponent, DirectiveComponent, HomeComponent ],
   imports: [
     BrowserModule,
     HttpClientModule,
