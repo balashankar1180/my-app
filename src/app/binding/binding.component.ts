@@ -1,12 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { UsercolorService } from '../usercolor.service';
 
 @Component({
   selector: 'app-binding',
   templateUrl: './binding.component.html',
-  styleUrls: ['./binding.component.css']
+  styleUrls: ['./binding.component.css'],
+  providers: [ UsercolorService ]
 })
 export class BindingComponent implements OnInit {
-  user : string = "Balashankar Gujja";
+
+constructor( private _userColor : UsercolorService ) { }
+ngOnInit() { }
+get color() : string {
+return this._userColor.userColor;
+}
+set color(value : string) {
+this._userColor.userColor = value;
+}
+
+user : string = "Balashankar Gujja";
   // ****** Code for Data Bidings Section ******
 fontSize : number = 30;
 titleStyles = { color : "black", fontWeight : "bold" };
@@ -23,10 +35,7 @@ fname : string = "";
 lname : string = "";
 country : string = "";
 getInfo() : void { alert("Thank You!"); }
-  constructor() { }
 
-  ngOnInit() {
-  }
 
 
 }

@@ -8,6 +8,7 @@ import { StudentComponent } from './student/student.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentService } from './student/student.service';
 import { AppService } from './app.service';
+import { UsercolorService } from './usercolor.service';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule, Routes } from '@angular/router';
 import { BindingComponent } from './binding/binding.component';
@@ -29,7 +30,7 @@ import { HomeComponent } from './home/home.component';
     NgbModule,
     RouterModule
   ],
-  providers: [ StudentService, AppService  ],
+  providers: [ StudentService, AppService, UsercolorService  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
