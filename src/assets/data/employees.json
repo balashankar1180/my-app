@@ -8,5 +8,7 @@
     { "ID": 107, "FirstName": "Emma", "DOB": "04/10/1995", "Gender": "Female", "CourseFee": 5278.55 },
     { "ID": 108, "FirstName": "Ramu", "DOB": "04/10/1995", "Gender": "Male", "CourseFee": 5278.55 },
     { "ID": 109, "FirstName": "Balu", "DOB": "04/10/1995", "Gender": "Male", "CourseFee": 5278.55 },
-    { "ID": 109, "FirstName": "David", "DOB": "04/10/1995", "Gender": "Male", "CourseFee": 5278.55 }
+    { "ID": 110, "FirstName": "David", "DOB": "04/10/1995", "Gender": "Male", "CourseFee": 5278.55 },
+    { "ID": 111, "FirstName": "Jenny", "DOB": "05/10/1995", "Gender": "Female", "CourseFee": 5000.55 },
+    { "ID": 112, "FirstName": "Ramya", "DOB": "06/10/1995", "Gender": "Female", "CourseFee": 6000.55 }
 ]
