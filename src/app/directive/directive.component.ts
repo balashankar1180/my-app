@@ -6,7 +6,7 @@ import { UsercolorService } from '../usercolor.service';
 selector: 'app-directive',
 templateUrl: './directive.component.html',
 styleUrls: ['./directive.component.css'],
-providers: [ AppService, UsercolorService ]
+providers: [ AppService ]
 })
 export class DirectiveComponent implements OnInit {
 public students = [];
@@ -16,10 +16,11 @@ ngOnInit()
 this._AppService.getEmployees()
 .subscribe(data => this.students = data );
 }
-get color() : string {
+get colour() : string {
     return this._userColor.userColor;
     }
-    set color(value : string) {
+    set colour(value : string) {
     this._userColor.userColor = value;
     }
 }
+

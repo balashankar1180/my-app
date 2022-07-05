@@ -5,5 +5,5 @@ providedIn: 'root'
 })
 export class UsercolorService {
 constructor() { console.log("New Instance of Service Created.") }
-userColor : string = "yellow";
+userColor : string = "pink";
 }

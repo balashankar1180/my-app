@@ -5,16 +5,16 @@ import { UsercolorService } from '../usercolor.service';
   selector: 'app-binding',
   templateUrl: './binding.component.html',
   styleUrls: ['./binding.component.css'],
-  providers: [ UsercolorService ]
+  
 })
 export class BindingComponent implements OnInit {
 
 constructor( private _userColor : UsercolorService ) { }
 ngOnInit() { }
-get color() : string {
+get colour() : string {
 return this._userColor.userColor;
 }
-set color(value : string) {
+set colour(value : string) {
 this._userColor.userColor = value;
 }
 

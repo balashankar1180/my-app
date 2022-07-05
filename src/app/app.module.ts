@@ -30,7 +30,7 @@ import { HomeComponent } from './home/home.component';
     NgbModule,
     RouterModule
   ],
-  providers: [ StudentService, AppService, UsercolorService  ],
+  providers: [ StudentService, AppService, UsercolorService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
