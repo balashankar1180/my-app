@@ -10,16 +10,13 @@ import { SingleAComponent } from './single/single-a/single-a.component';
 import { SingleBComponent } from './single/single-b/single-b.component';
 
 const routes: Routes = [
-  { component : HomeComponent, path : "home" },
-  { component : StudentComponent, path : "student" },
-  { component : BindingComponent, path : "bindings" },
-  { component : InterfaceComponent, path : "interface" },
-  { component : DirectiveComponent, path : "directive" },
-  { component : SingleComponent, path : "single",
-  children: [ { path:'sing-a', component: SingleAComponent }, { path:'sing-b', component: SingleBComponent } ] }
-
-  
-
+{ component : HomeComponent, path : "home" },
+{ component : StudentComponent, path : "student" },
+{ component : BindingComponent, path : "bindings" },
+{ component : InterfaceComponent, path : "interface" },
+{ component : DirectiveComponent, path : "directive" },
+{ component : SingleComponent, path : "single",
+children: [ { path:'sing-a', component: SingleAComponent }, { path:'sing-b', component: SingleBComponent } ] }
 ];
 
 @NgModule({
@@ -27,3 +24,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const ArrayOfComponents = [ SingleComponent, SingleAComponent, SingleBComponent ];

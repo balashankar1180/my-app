@@ -1,31 +1,33 @@
 
-<!-- ****** Concept of ngFor Directive ****** -->
+<!-- ****** Begin : Code for ngFor Directive ****** -->
 <div class="forDirective">
-    <h1>Concept of ngFor Directive</h1>
-    <table>
-    <thead>
-    <tr><th class="one">ID</th> <th>FirstName</th> <th>DOB</th> <th>Gender</th> <th class="two">CourseFee</th></tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let data of students">
-    <td>{{data.ID}}</td>
-    <td>{{data.FirstName}}</td>
-    <td>{{data.DOB}}</td>
-    <td>{{data.Gender}}</td>
-    <td>{{data.CourseFee}}</td>
-    </tr>
-    <tr *ngIf="!students || students.length==0">
-    <td colspan="5">No Students to Display</td>
-    </tr>
-    </tbody>
-    </table>
-    </div>
-    <p>The table data is comes from Service Class</p>
-    <br />
-    <div>
-        User Color Preference : 
-        <input style="width: 800px;" type="text" [(ngModel)]="colour" [style.background]="colour"/>
-        </div>
+<h1>Concept of ngFor Directive</h1>
+<table>
+<thead>
+<tr><th class="one">ID</th> <th>FirstName</th> <th>DOB</th> <th>Gender</th> <th class="two">CourseFee</th></tr>
+</thead>
+<tbody>
+<tr *ngFor="let data of students">
+<td>{{data.ID}}</td>
+<td>{{data.FirstName}}</td>
+<td>{{data.DOB}}</td>
+<td>{{data.Gender}}</td>
+<td>{{data.CourseFee}}</td>
+</tr>
+<tr *ngIf="!students || students.length==0">
+<td colspan="5">No Students to Display</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The table data is comes from Service Class</p>
+<br />
+<div>
+<!-- ****** Begin : Code for ngFor Directive ****** -->
+
+User Color Preference : 
+<input style="width: 800px;" type="text" [(ngModel)]="colour" [style.background]="colour"/>
+</div>
      
    
     

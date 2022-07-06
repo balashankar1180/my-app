@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { UsercolorService } from '../usercolor.service';
 
 @Component({
-  selector: 'app-binding',
-  templateUrl: './binding.component.html',
-  styleUrls: ['./binding.component.css'],
-  
+selector: 'app-binding',
+templateUrl: './binding.component.html',
+styleUrls: ['./binding.component.css'],
 })
-export class BindingComponent implements OnInit {
 
+export class BindingComponent implements OnInit {
+// ****** Code for Singleton Service ******
 constructor( private _userColor : UsercolorService ) { }
 ngOnInit() { }
 get colour() : string {

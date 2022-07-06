@@ -16,11 +16,14 @@ ngOnInit()
 this._AppService.getEmployees()
 .subscribe(data => this.students = data );
 }
-get colour() : string {
-    return this._userColor.userColor;
-    }
-    set colour(value : string) {
-    this._userColor.userColor = value;
-    }
-}
 
+// ****** Begin : Code for Singleton Service ******
+get colour() : string {
+return this._userColor.userColor;
+}
+set colour(value : string) {
+this._userColor.userColor = value;
+}
+// ****** End : Code for Singleton Service ******
+
+}
