@@ -15,6 +15,10 @@ constructor( private _studentService : StudentService ) {  }
 ngOnInit() {
 // this.student =this._studentService.getStudents();
 }
+public defaultColDef: ColDef = {
+    sortable: true,
+    filter: true,
+  };
 columnDefs: ColDef[] = [
 { field: 'ID', sortable : true },
 { field: 'FirstName' },
@@ -22,5 +26,6 @@ columnDefs: ColDef[] = [
 { field: 'Gender' },
 { field: 'CourseFee' },
 ];
+
 rowData = this._studentService.getStudents(); // Substitute : Place an array of data [ { data1}, { data2}, { data3} ];
 }

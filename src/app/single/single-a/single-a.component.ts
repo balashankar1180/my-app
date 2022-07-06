@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
 selector: 'app-single-a',
 
@@ -12,7 +13,7 @@ template: `
 })
 export class SingleAComponent implements OnInit {
 
-  constructor() { }
+  constructor(  ) { }
 
   ngOnInit() {
   }

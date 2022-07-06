@@ -5,7 +5,10 @@
     style="width: auto; height: 300px;"
     class="ag-theme-alpine"
     [rowData]="rowData"
-    [columnDefs]="columnDefs">
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [animateRows]="true"
+    [rowSelection]="'multiple'">
 </ag-grid-angular>
 <p>Here the table data is loaded from service class. so the services concept is also implemented along with AG-grid.</p>
 </div>
