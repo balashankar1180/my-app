@@ -16,6 +16,12 @@ return [
 { ID: '109', FirstName: 'Jeevan', DOB: '05/10/1992', Gender: 'Male', CourseFee: 6020.55 },
 { ID: '110', FirstName: 'Janani', DOB: '03/10/1992', Gender: 'Female', CourseFee: 2000.55 },
 { ID: '111', FirstName: 'Rohan', DOB: '09/11/1992', Gender: 'Female', CourseFee: 6000.00 },
+{ ID: '112', FirstName: 'Tarun', DOB: '04/10/1992', Gender: 'Male', CourseFee: 1278.55 },
+{ ID: '113', FirstName: 'Balu', DOB: '04/10/1992', Gender: 'Male', CourseFee: 1278.55 },
+{ ID: '114', FirstName: 'Emma', DOB: '06/11/1992', Gender: 'Female', CourseFee: 6000.00 },
+{ ID: '115', FirstName: 'Jeevan', DOB: '05/10/1992', Gender: 'Male', CourseFee: 6020.55 },
+{ ID: '116', FirstName: 'Janani', DOB: '03/10/1992', Gender: 'Female', CourseFee: 2000.55 },
+{ ID: '117', FirstName: 'Rohan', DOB: '09/11/1992', Gender: 'Female', CourseFee: 6000.00 }
 ];
 }
 }
