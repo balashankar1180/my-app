@@ -1,38 +1,46 @@
 
+<div class="intpro">
+<h2>Concept of Interpolation and Property Binding</h2>
+<p>Interpolation : {{user1}}</p>
+<input type="button" [value]="user2" [disabled]="!isDisabled" />
+<button [class]="classToApply">Click Me</button>
+<button [class.boldClass]="applyBoldClass">Click Me</button>
+</div>
+
 <!-- ****** Concept of Data Bindings ****** -->
 <div class="bindings">
-    <h1>Concept of Data Bindings</h1>
-    <button type="button" class="btn btn-primary" (click)="onClick2()" style="color : black;">Click Here</button>
-    <button type="button" class="btn btn-primary" (click)="onClick()" [ngStyle]="titleStyles">Click Here</button>
-    <br>
-    <!-- <label for="fname">Enter Your Text Here : </label>
-    <input type="text" placeholder="Enter Text Here" [(ngModel)]="userText"/>
-    <p>{{userText}}</p> -->
+  <h1>Concept of Data Bindings</h1>
+  <button type="button" class="btn btn-primary" (click)="onClick2()" style="color : black;">Click Here</button>
+  <button type="button" class="btn btn-primary" (click)="onClick()" [ngStyle]="titleStyles">Click Here</button>
+  <br>
+  <!-- <label for="fname">Enter Your Text Here : </label>
+  <input type="text" placeholder="Enter Text Here" [(ngModel)]="userText"/>
+  <p>{{userText}}</p> -->
 
 </div>
 
-    <div class="two-way">
-        <h1 style="text-align: center;">Two Way Data Binding</h1>
-        <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your first name.." [(ngModel)]="fname">     
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name.." [(ngModel)]="lname">
-        <label for="country">Country</label>
-        <select id="country" name="country" [(ngModel)]="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-        </select>
-        <button class="form" (click)="getInfo()">Submit</button>
-        </form>
-       <p>First Name : <b>{{fname}}</b></p>
-       <p>Last Name : <b>{{lname}}</b></p>
-       <p>Country : <b>{{country}}</b></p>
+<div class="two-way">
+  <h1 style="text-align: center;">Two Way Data Binding</h1>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name.." [(ngModel)]="fname">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." [(ngModel)]="lname">
+    <label for="country">Country</label>
+    <select id="country" name="country" [(ngModel)]="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <button class="form" (click)="getInfo()">Submit</button>
+  </form>
+  <p>First Name : <b>{{fname}}</b></p>
+  <p>Last Name : <b>{{lname}}</b></p>
+  <p>Country : <b>{{country}}</b></p>
 
-        </div>
-    <p style="margin-left: 5px;"><b>Data Binding Loaded Successfully.</b></p>
-<div>
-User Color Preference : 
-<input type="text" [(ngModel)]="colour" [style.background]="colour"/>
+  <p style="margin-left: 5px;"><b>Data Binding Loaded Successfully.</b></p>
 </div>
+  <div>
+    User Color Preference :
+    <input type="text" [(ngModel)]="colour" [style.background]="colour" />
+  </div>

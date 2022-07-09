@@ -16,9 +16,13 @@ return this._userColor.userColor;
 }
 set colour(value : string) {
 this._userColor.userColor = value;
-}
-
-user : string = "Balashankar Gujja";
+  }
+// Code for Interpolation and Property Binding
+user1: string = "Hello World";
+user2: string = "Property Binding";
+isDisabled: boolean = true;
+classToApply: string = "colorClass italicClass";
+applyBoldClass: boolean = true;
   // ****** Code for Data Bidings Section ******
 fontSize : number = 30;
 titleStyles = { color : "black", fontWeight : "bold" };
