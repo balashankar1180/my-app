@@ -8,6 +8,8 @@ import { DirectiveComponent } from './directive/directive.component';
 import { SingleComponent } from './single/single.component';
 import { SingleAComponent } from './single/single-a/single-a.component';
 import { SingleBComponent } from './single/single-b/single-b.component';
+import { UserComponent } from './user/user.component';
+import { UserChildComponent } from './user-child/user-child.component';
 
 const routes: Routes = [
 { component : HomeComponent, path : "home" },
@@ -16,7 +18,9 @@ const routes: Routes = [
 { component : InterfaceComponent, path : "interface" },
 { component : DirectiveComponent, path : "directive" },
 { component : SingleComponent, path : "single",
-children: [ { path:'sing-a', component: SingleAComponent }, { path:'sing-b', component: SingleBComponent } ] }
+children: [ { path:'sing-a', component: SingleAComponent }, { path:'sing-b', component: SingleBComponent } ] },
+{ component : UserComponent, path : "user"},
+{ component : UserChildComponent, path : "user/:name"}
 ];
 
 @NgModule({

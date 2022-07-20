@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Iemployee } from './employee';
 import { Observable  } from 'rxjs';
+import { User } from './Inter/user';
+
 
 
 @Injectable({
@@ -13,4 +15,12 @@ export class AppService {  // Service to get data from http Service
   getEmployees() : Observable<Iemployee[]>{
   return this.http.get<Iemployee[]>(this._url)
   }
+  
+  getUsers() : Observable<User[]>{
+  return this.http.get<User[]>("https://jsonplaceholder.typicode.com/users")
+  }
+  // Method to get data Fake REST API
+  getUser(name : string) : Observable<User>{
+    return this.http.get<User>("https://jsonplaceholder.typicode.com/users/" + name)
+    }
   }

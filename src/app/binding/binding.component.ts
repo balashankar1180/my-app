@@ -8,7 +8,12 @@ styleUrls: ['./binding.component.css'],
 })
 
 export class BindingComponent implements OnInit {
-// ****** Code for Singleton Service ******
+
+// ****** Code for Interpolation ******
+text1 : string = "I'm from Property";
+getText() : string { return "I'm from Method"; }
+
+
 constructor( private _userColor : UsercolorService ) { }
 ngOnInit() { }
 get colour() : string {

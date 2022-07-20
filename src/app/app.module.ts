@@ -23,6 +23,8 @@ import { SingleBComponent } from './single/single-b/single-b.component';
 import { StudentService } from './student/student.service';
 import { AppService } from './app.service';
 import { UsercolorService } from './usercolor.service';
+import { UserComponent } from './user/user.component';
+import { UserChildComponent } from './user-child/user-child.component';
 
 @NgModule({
 declarations : [ // ******  Declarations  ******
@@ -30,7 +32,7 @@ AppComponent, StudentComponent,
 BindingComponent, InterfaceComponent,
 DirectiveComponent, HomeComponent,
 SingleComponent, SingleAComponent,
-SingleBComponent, ArrayOfComponents
+SingleBComponent, ArrayOfComponents, UserComponent, UserChildComponent
 ],
 imports: [ // ******  Imports  ******
 BrowserModule, HttpClientModule, AppRoutingModule,

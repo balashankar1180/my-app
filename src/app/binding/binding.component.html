@@ -1,4 +1,14 @@
 
+<div class="bindings">
+<h1>Concept of Interpolation</h1>
+<h3>{{text1}}</h3>
+<h3>{{getText()}}</h3>
+</div>
+<div class="bindings">
+<h1>Concept of Property Binding</h1>
+<h3 [innerText]="text1"></h3>
+<h3 [innerText]="getText()"></h3>
+</div>
 <!-- ****** Concept of Data Bindings ****** -->
 <div class="bindings">
     <h1>Concept of Data Bindings</h1>
@@ -23,6 +33,7 @@
         <option value="australia">Australia</option>
         <option value="canada">Canada</option>
         <option value="usa">USA</option>
+        <option value="india">India</option>
         </select>
         <button class="form" (click)="getInfo()">Submit</button>
         </form>
@@ -33,6 +44,7 @@
         </div>
     <p style="margin-left: 5px;"><b>Data Binding Loaded Successfully.</b></p>
 <div>
+ <p>{{getText()}}</p> <!-- From Function -->
 User Color Preference : 
 <input type="text" [(ngModel)]="colour" [style.background]="colour"/>
 </div>
