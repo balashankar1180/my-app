@@ -8,3 +8,13 @@ div.ng-grid {
 }
 .demo
 { color: red;}
+.example-header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.example-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

@@ -1,4 +1,4 @@
-div.bindings {
+div.bindings, div.intpro {
     padding: 5px;
     margin: 4px;
     width: 50%;
@@ -36,3 +36,6 @@ div.bindings {
     border-radius: 4px;
     /* cursor: pointer; */
   }
+.colorClass { color : red; }
+.italicClass { font-style: italic; }
+.boldClass { font-weight: bold; }

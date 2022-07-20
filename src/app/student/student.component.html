@@ -1,6 +1,7 @@
 
 <div class="ng-grid">
 <h1>Concept of AG-Grid</h1>
+<<<<<<< HEAD
 <ag-grid-angular
     style="width: auto; height: 300px;"
     class="ag-theme-alpine-dark"
@@ -9,7 +10,31 @@
     [defaultColDef]="defaultColDef"
     [animateRows]="true"
     [rowSelection]="'multiple'">
+=======
+<div class="example-wrapper">
+<div class="example-header">
+Page Size:
+<select (change)="onPageSizeChanged()" id="page-size">
+<option value="10" selected="">10</option>
+<option value="100">100</option>
+<option value="500">500</option>
+<option value="1000">1000</option>
+</select>
+</div>
+<ag-grid-angular style="width: 800px; height: 300px;"
+class="ag-theme-alpine-dark"
+[rowData]="rowData"
+[columnDefs]="columnDefs"
+[defaultColDef]="defaultColDef"
+[animateRows]="true"
+[pagination]="true"
+[paginationPageSize]="paginationPageSize"
+[paginationNumberFormatter]="paginationNumberFormatter"
+(firstDataRendered)="onFirstDataRendered($event)"
+      
+[rowSelection]="'multiple'">
+>>>>>>> 42ca5bdab784c50850c12c377bd043c79a17b89a
 </ag-grid-angular>
-<p>Here the table data is loaded from service class. so the services concept is also implemented along with AG-grid.</p>
+<p>Data from http Service</p>
 </div>
 <!-- <h2>{{text}}</h2> From AppComponent -->
