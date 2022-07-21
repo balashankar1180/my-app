@@ -4,3 +4,9 @@ img {
     left : 50px;
     bottom: -20px;
 }
+.admin {
+    width: 800px;
+    height: 500px;
+    background-color: blue;
+}
+a { text-decoration: none;}

@@ -26,6 +26,8 @@ import { UsercolorService } from './usercolor.service';
 import { UserComponent } from './user/user.component';
 import { UserChildComponent } from './user-child/user-child.component';
 
+
+
 @NgModule({
 declarations : [ // ******  Declarations  ******
 AppComponent, StudentComponent,

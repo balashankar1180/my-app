@@ -1,2 +1,13 @@
 <h1>Hai Everyone</h1>
 <!-- <button onclick="getError()">Click Me</button> -->
+<div class="admin">
+    <h2>Admin Working</h2>
+    <ul>
+        <li><a routerLink="admin/admin">Admin Component</a></li>
+        <li><a routerLink="admin/customer">Customer</a></li>
+    </ul>
+    
+</div>
+<router-outlet></router-outlet>
+
+<!-- { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) } -->
