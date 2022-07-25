@@ -1,0 +1,13 @@
+{
+path : "admin",
+canActivate : [AdminGuard],
+children : [ // Parent Component
+    { path : '', component : SingleComponent }, 
+path : '';
+canActivateChild : [SuperAdminGuard],
+children : [ // Child Component
+    { path:'sing-a', component: SingleAComponent }, 
+    { path:'sing-b', component: SingleBComponent }
+]
+]
+}

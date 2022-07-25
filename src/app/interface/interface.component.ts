@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterfaceComponent implements OnInit {
 
+  imageUrl : string = "";
   constructor() { }
 
   ngOnInit() {

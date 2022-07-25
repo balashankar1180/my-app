@@ -1,0 +1,15 @@
+ <div class="main">
+<form>
+    <h2>Register Here</h2>
+    <label for="username">Enter Username</label>
+    <input type="text" id="username" name="username" value="" placeholder="Enter Username" />
+    <label for="pswd">Enter Password</label>
+    <input type="password" id="pswd" name="pswd" value="" placeholder="Enter Password" />
+    <button class="btn btn-primary" type="submit">Sign Up</button>
+</form>
+</div>
+<div>
+<h2>Do you have account already? Then login</h2>
+<button class="btn btn-primary m-3" routerLink="/account/login">Login</button>
+<router-outlet></router-outlet>
+</div>

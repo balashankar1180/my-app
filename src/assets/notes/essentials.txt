@@ -1,0 +1,7 @@
+***** TypeScript Essentials *****
+-----------------------------------------------------------------
+// = To insert single line comments
+
+/* text here */ = To insert multiline comments
+
+

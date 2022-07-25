@@ -39,3 +39,14 @@ div.bindings, div.intpro {
 .colorClass { color : red; }
 .italicClass { font-style: italic; }
 .boldClass { font-weight: bold; }
+div.bg-red {
+ background-color: #4CAF50;
+ padding: 5px;
+    margin: 4px;
+    width: 50%;
+    height: 200px;
+    border : 4px solid #0E2C4B;
+    border-radius: 5px;
+    color : red;
+}
+p {color : red;}

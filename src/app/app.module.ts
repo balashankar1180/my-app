@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AgGridModule } from 'ag-grid-angular';
+// import { AdminModule } from './admin/admin.module';
 import { AppRoutingModule, ArrayOfComponents } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule, Routes } from '@angular/router';
@@ -25,6 +26,8 @@ import { AppService } from './app.service';
 import { UsercolorService } from './usercolor.service';
 import { UserComponent } from './user/user.component';
 import { UserChildComponent } from './user-child/user-child.component';
+import { CustomerModule } from './customer.module';
+import { AdminModule } from './admin/admin.module';
 
 
 
@@ -36,10 +39,11 @@ DirectiveComponent, HomeComponent,
 SingleComponent, SingleAComponent,
 SingleBComponent, ArrayOfComponents, UserComponent, UserChildComponent
 ],
+
 imports: [ // ******  Imports  ******
-BrowserModule, HttpClientModule, AppRoutingModule,
+BrowserModule, HttpClientModule, AppRoutingModule,AdminModule,
 FormsModule, AgGridModule.withComponents([]),
-NgbModule, RouterModule
+NgbModule,RouterModule 
 ],
 providers: [ StudentService, AppService, UsercolorService ], // ******  Providers  ******
 bootstrap: [AppComponent]

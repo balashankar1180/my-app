@@ -7,7 +7,7 @@ import { CustomerComponent } from './customer/customer.component';
 
 
 @NgModule({
-  declarations: [AdminComponent, CustomerComponent],
+  declarations: [AdminComponent,CustomerComponent],
   imports: [
     CommonModule,
     AdminRoutingModule

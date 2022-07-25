@@ -20,7 +20,7 @@ export class AppService {  // Service to get data from http Service
   return this.http.get<User[]>("https://jsonplaceholder.typicode.com/users")
   }
   // Method to get data Fake REST API
-  getUser(name : string) : Observable<User>{
-    return this.http.get<User>("https://jsonplaceholder.typicode.com/users/" + name)
+  getUser(name : string) : Promise<User>{
+    return this.http.get<User>("https://jsonplaceholder.typicode.com/users/" + name).toPromise();
     }
   }

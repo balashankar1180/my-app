@@ -16,7 +16,5 @@ export class UserComponent implements OnInit {
     this.app.getUsers()
     .subscribe(data => this.users = data);
   }
- getUser(name : string) {
-  
- }
+ getUser(name : string) { }
 }

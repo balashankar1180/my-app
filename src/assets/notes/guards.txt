@@ -1,0 +1,15 @@
+1. Command to generate guard : ng g guard guard_name --skip-tests=true
+Note : --skip-tests=true omits the creation of spec.ts file.
+
+2. Choose the option in list of Guard Interface.
+3. In the routing module we will use option canActivate or any guard.
+It will resolve to true or false.
+true => user can access the route.
+false => user cannot access the route.
+4. we can use any number of route guards on canActivate
+=> it is an array.
+=> all have to resolve to true.
+5. use cases :
+- check if user in logged in.
+- check if user can edit the product details
+- check if the user is admin or any level

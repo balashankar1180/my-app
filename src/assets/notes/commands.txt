@@ -1,0 +1,32 @@
+ng g c component_name = To generate component
+
+(1) ng g c component_name --skip-tests=true
+To generate component without spec file.
+
+(2) ng g s service_name --skip-tests=true
+To generate service without spec file.
+
+(3) ng g interface interface_name --skip-tests=true
+To generate interface without spec file.
+
+(4) ng g pipe pipe_name --skip-tests=true
+To generate pipe without spec file.
+
+(5) ng g guard guard_name --skip-tests=true
+To generate a guard without spec file. This command returns four interfaces.
+1 - canActivate : Checks to see if a user can visit a route.
+2 - canActivateChild : Checks to see if a user can visit a children routes.
+(3) canLoad :
+Checks to see if a user can route to a module that is lazy loaded.
+This protects the route completely. Such as lazy loading module and also protects all the routes associated with that module.
+4 - canDeactivate : Checks to see if a user can exit a route.
+5 - Resolve : Performs route data retrieval before route activation.
+
+(6) ng g module account --route account --module app.module
+This command creates account moudue(account.module.ts) and account routing module(account-routing.module.ts) along with account component.
+- account.module.ts
+- account-routing.module.ts
+- account.component.ts
+- account.component.html
+- account.component.css
+And its updates the app-routing.module.ts with account path to this module.
