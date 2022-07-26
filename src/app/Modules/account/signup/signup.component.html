@@ -1,15 +1,37 @@
- <div class="main">
-<form>
-    <h2>Register Here</h2>
-    <label for="username">Enter Username</label>
-    <input type="text" id="username" name="username" value="" placeholder="Enter Username" />
-    <label for="pswd">Enter Password</label>
-    <input type="password" id="pswd" name="pswd" value="" placeholder="Enter Password" />
-    <button class="btn btn-primary" type="submit">Sign Up</button>
-</form>
+<div id="#wrapper">
+<div class="container mt-3">
+    <h2>Stacked Reactive Form</h2>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <div class="mb-1 mt-3">
+            <label for="fname">First Name :</label>
+            <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="fname" formControlName="fName"> <!-- onclick="getAlert()" [formControl]="name" -->          {{ name.value }} 
+        </div>
+        <!-- <button type="button" (click)="updateName()">Update Name</button> -->
+        <div class="mb-1">
+            <label for="lname">Last Name :</label>
+            <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="lname" formControlName="lName">
+            {{ name.value }} 
+        </div>
+      <div class="mb-1">
+        <label for="email">Email :</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email here" name="email" formControlName="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd">Password :</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password here" name="pswd" formControlName="pswd">
+      </div>
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <button type="submit" [disabled]="!userForm.valid" class="btn btn-primary mb-2" onclick="getAlert()">Submit</button>
+    </form>
+    <h6>Already have an account?</h6>
+    <button class="btn btn-primary" routerLink="/account/login">Login</button>
+  </div>
 </div>
-<div>
-<h2>Do you have account already? Then login</h2>
-<button class="btn btn-primary m-3" routerLink="/account/login">Login</button>
-<router-outlet></router-outlet>
-</div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+

@@ -1,1 +1,17 @@
 <p>customer works!</p>
+<div>
+    <table>
+    <thead>
+    <!-- <tr id="center" colspan="4">Users Details</tr> -->
+    </thead>
+    <tbody>
+    <tr id="row"><td>ID</td><td>Name</td><td>UserName</td><td>Email</td></tr>
+    <tr *ngFor="let data of users">
+    <td>{{data.id}}</td>
+    <td>{{data.name}}</td>
+    <td>{{data.username}}</td>
+    <td>{{data.email}}</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>

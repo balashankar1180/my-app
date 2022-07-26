@@ -10,3 +10,7 @@ function getWarning()
 {
     swal("Are you sure?", "", "warning");
 }
+function getAlert()
+{
+    swal("Congratulations","Registration Successful!", "success");
+}
