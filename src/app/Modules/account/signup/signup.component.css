@@ -19,8 +19,6 @@ input {
 input.form-control {
     width: 600px;
 }
-/* div #wrapper {
--webkit-box-shadow: -9px 14px 20px -18px rgba(0,0,0,0.58);
--moz-box-shadow: -9px 14px 20px -18px rgba(0,0,0,0.58);
-box-shadow: -9px 14px 20px -18px rgba(0,0,0,0.58);
-} */
+span {
+    color : red;
+}

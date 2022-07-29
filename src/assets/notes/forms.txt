@@ -3,6 +3,8 @@ onclick="getAlert()"
 style="border:dashed;border-color: blue;"
 import { FormsModule } from '@angular/forms';
 
+<!-- <button type="button" (click)="updateName()">Update Name</button> -->
+
 name = new FormControl(''); // Single Form Control
  updateName()
   {

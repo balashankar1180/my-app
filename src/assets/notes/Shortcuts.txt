@@ -1,0 +1,10 @@
+Ctrl + Shift + J = To open developers console in chrome window
+
+Ctrl + Shift + I = To open what type of panel you used last
+
+Ctrl + Shift + C = To open Elements panel
+
+Ctrl + Shift + R = To do hard reload
+
+Ctrl + R = To do normal reload
+
