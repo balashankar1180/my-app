@@ -47,7 +47,14 @@
 
 <div class="mb-1"> <!-- Skill Name Field -->
 <label for="skillName">SkillName :</label>
-<input type="text" class="form-control" id="skillName" placeholder="Enter skill name here" name="skillName" formControlName="skillName" >
+<input type="text" class="form-control" [id]="skillName+i" placeholder="Enter skill name here" name="skillName" formControlName="skillName" >
+
+<span class="help-block" *ngIf="( ( this.userForm.get('skills').controls[i].controls['skillName'].touched || this.userForm.get('skills').controls[i].controls['skillName'].dirty) && this.userForm.get('skills').controls[i].controls['skillName'].errors)">
+        <span *ngIf="this.userForm.get('skills').controls[i].controls['skillName'].errors.required" style="color:red">skillName
+          
+          
+           is required</span>
+         </span>
 </div>
 
 <div class="mb-3"> <!-- Proficiency Field -->

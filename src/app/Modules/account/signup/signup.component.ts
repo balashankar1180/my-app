@@ -12,27 +12,40 @@ import {CustomValidators} from './custom.validators'
 export class SignupComponent implements OnInit {
   isDirty=true;
   userForm: FormGroup;
-  constructor() { }
+  constructor(private x:FormBuilder) { }
   ngOnInit()
   {
   /*
   Instantiation of FormGroup, passing the collection of child/form controls as a first argument.
   The key for each child registers is the name for the control.
   */
-  this.userForm = new FormGroup({
-  fName : new FormControl('',[Validators.required,Validators.minLength(10)]),
-  lName: new FormControl(''),
-  email: new FormControl('',[Validators.required, Validators.email, CustomValidators.validateEmail]),//this.validateEmail]),
-  pswd: new FormControl(''),
-  skills : new FormArray([ this.addfewSkill() ])
-  });
+ 
+  // this.userForm = new FormGroup({
+  // fName : new FormControl('',[Validators.required,Validators.minLength(10)]),
+  // lName: new FormControl(''),
+  // email: new FormControl('',[Validators.required, Validators.email, CustomValidators.validateEmail]),//this.validateEmail]),
+  // pswd: new FormControl(''),
+  // skills : new FormArray([ this.addfewSkill() ])
+  // });
+
+
+
+  this.userForm = this.x.group({
+    fName :['',[Validators.required,Validators.minLength(10)]],
+    lName: [''],
+    email: ['',[Validators.required, Validators.email, CustomValidators.validateEmail]],//this.validateEmail]),
+    pswd: [''],
+    skills : this.x.array([ this.addfewSkill() ])
+    });
+
+
   }
 
   addfewSkill() : FormGroup // Method contains array of two controls skillName and proficiency
   {
   return new FormGroup({
-  skillName : new FormControl(''),
-  profeciency : new FormControl('') 
+  skillName : new FormControl('',[Validators.required]),
+  profeciency : new FormControl('',[Validators.required]) 
   })
   }
 
@@ -44,7 +57,10 @@ export class SignupComponent implements OnInit {
   onSubmit()
   {
   console.log(this.userForm.value); // To log Form values to console
-  this.userForm.reset(); // To reset the form input fields when submit is clicked.
+  ////////////////this.userForm.reset(); // To reset the form input fields when submit is clicked.
+
+
+  console.log((<FormGroup>(<FormArray>this.userForm.get('skills')).controls[0]).controls['skillName'].value);
   }
 
 
