@@ -6,10 +6,10 @@ export class CustomValidators
     const email : string = control.value;
     const domain = email != null ? email.substring(email.lastIndexOf('@') + 1): ''; // Need to explore
     if (email === '' || domain.toLowerCase() === 'scoriait.com') {
-    return null;
+    return null; // returning null
     } else
     {
-    return { 'validateEmail': true };
+    return { 'validateEmail': true }; // returning { [key: string] : any }
     }
     }
 

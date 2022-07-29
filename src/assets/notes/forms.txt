@@ -52,7 +52,13 @@ onSubmit(): void
 }
 -------------------------------------------------
 
-
+Code For Validations Errors :
+<div>
+<span *ngIf="((accountForm.get('fname').touched || accountForm.get('fname').dirty) && accountForm.get('fname').errors)">
+<span *ngIf="accountForm.get('fname').errors.required">First name is required </span>
+<span *ngIf="accountForm.get('fname').errors.minlength">First name length is required </span>
+</span>
+</div>
 
 
 

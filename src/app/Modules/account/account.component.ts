@@ -11,7 +11,7 @@ export class AccountComponent implements OnInit {
 
 accountForm : FormGroup;
 
-constructor( private fb : FormBuilder ) { }
+constructor( private fb : FormBuilder ) { } // FormBuilder initialization should be done in constructor only
 ngOnInit() {
 this.accountForm = this.fb.group({
 fname : ['', [Validators.required, Validators.minLength(10)]],
@@ -22,15 +22,29 @@ address : this.fb.group({
 city: ['', Validators.required],
 street: ['', Validators.required],
 pin: ['', Validators.required]
-})
+}),
+skills : new FormArray([this.skill()]) // It is in the accountForm formgroup
 });
+} // Closing of ngOnInit()
+
+skill() : FormGroup // Method contains array of two controls skillName and proficiency
+{
+return this.fb.group({
+skill : new FormControl(''),
+prof : new FormControl('')
+})
 }
-onSubmit() {
-  console.log(this.accountForm.value);
-  this.accountForm.reset();
+
+addSkills() : void // Method to call when button is clicked to add one more set of skills
+{
+(<FormArray>this.accountForm.get("skills")).push(this.skill());
+}
+
+onSubmit()
+{
+console.log(this.accountForm.value);
+this.accountForm.reset();
 }
 
 
-
-
-}
+} // Closing of AccountComponent

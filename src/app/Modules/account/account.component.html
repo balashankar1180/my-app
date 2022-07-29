@@ -3,16 +3,19 @@
     <form class="build" [formGroup]="accountForm" (ngSubmit)="onSubmit()">
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname" formControlName="fname">
-    <span *ngIf="!fname?.valid && (fname?.dirty || fname?.touched)">
-    <span *ngIf="fname.errors.required">First name is required </span>
+    <div>
+    <span *ngIf="((accountForm.get('fname').touched || accountForm.get('fname').dirty) && accountForm.get('fname').errors)">
+    <span *ngIf="accountForm.get('fname').errors.required">First name is required </span>
+    <span *ngIf="accountForm.get('fname').errors.minlength">First name length is required </span>
     </span>
-    <br>
+    </div>
     <label for="lname">Last name:</label><br>
     <input type="text" id="lname" name="lname" formControlName="lname"><br>
     <label for="email">Enter Email:</label><br>
     <input type="text" id="email" name="email" formControlName="email"><br>
     <label for="country">Country:</label><br>
-    <input type="text" id="country" name="country" formControlName="country"><br>
+    <input type="text" id="country" name="country" formControlName="country">
+    
     <div formGroupName="address">
     <label for="city">City:</label><br>
     <input type="text" id="city" name="city" formControlName="city"><br>
@@ -21,8 +24,25 @@
     <label for="pin">Pin Code:</label><br>
     <input type="text" id="pin" name="pin" formControlName="pin"><br>
     </div>
+    <div formArrayName="skills">
+
+    <div *ngFor="let s of this.accountForm.get('skills').controls, let i=index">
+        <div [formGroupName]="i">
+        <div>
+        <label for="skill">Skill:</label><br>
+        <input type="text" id="skill" name="skill" formControlName="skill"><br>
+        </div>
+        <div>
+        <label for="prof">Profeciency:</label><br>
+        <input type="text" id="prof" name="prof" formControlName="prof"><br>
+        </div>
+        
+        </div>
+        </div>
+        </div>
+        <button type="button" class="btn btn-secondary" (click)="addSkills()">Add Skill</button>
     <br>
-    <button class="btn btn-secondary" [disabled]="!accountForm.valid">Submit</button>
+    <button type="submit" class="btn btn-secondary" [disabled]="!accountForm.valid">Submit</button>
     </form> 
 </div>
 
